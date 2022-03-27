@@ -13,17 +13,24 @@ Do not modify the main function.*/
 
 #include <iostream>
 
-long Factorial(int no);
-long nCr(int n, int r);
+using namespace std;
 
-int main() {
-  int n, r;
-  std::cout << "Enter a value for n ";
-  std::cin >> n;
-  std::cout << "Enter a value for r ";
-  std::cin >> r;
-  std::cout << "nCr = ";
-  std::cout << nCr(n,r);
-  std::cout << std::endl;
-  return 0;
+int Square(int x);
+
+int Cube(int x);
+
+int main()
+{
+    int num = 10;
+
+    cout << "Cube : " << Cube(num) << "\n" << "Square : " << Square(num) << endl;
 }
+
+int Cube(int x) {
+    return x * x;
+}
+
+int Square(int x) {
+    return x * x * x;
+}
+

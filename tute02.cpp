@@ -24,7 +24,7 @@ int main()
    printf("Enter OtHrs : ");
    scanf("%d", &otHrs); 
    
-   switch (etype) {
+   switch(etype) {
       case 1 :
           otRate = 1000;
           break;
